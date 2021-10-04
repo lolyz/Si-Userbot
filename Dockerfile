@@ -1,7 +1,7 @@
 # We're using Ubuntu 20.10
 FROM biansepang/weebproject:buster
 
-RUN git clone -b userbot https://github.com/LoLyz/userbot /root/userbot
+RUN git clone -b SiUserbot https://github.com/LoLyz/SiUserbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
