@@ -10,10 +10,12 @@
   "env": {
     "API_KEY": {
       "description": "Dapatkan API KEY di web my.telegram.org. Masukan yg APP ID Telegram",
+      "value": "3729165",
       "required": true
     },
     "API_HASH": {
       "description": "Dapatkan Api hash di web my.telegram.org.",
+      "value": "ebc5072f96c2aa4826a6c18b46a99f51",
       "required": true
     },
      "STRING_SESSION": {
