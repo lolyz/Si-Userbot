@@ -1,11 +1,11 @@
 {
-  "name": "Tornado-Userbot",
-  "description": "[Tornado-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "name": "userbot",
+  "description": "[userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
   "logo": "https://telegra.ph/file/d0b4513031fd141edbe93.jpg",
   "keywords": ["telegram", "userbot", "man-userbot", "modular", "python"],
-  "repository": "https://github.com/Bomansyah/Tornado-Userbot",
-  "telegram": "https://t.me/TSAxWAN",
-  "success_url": "https://t.me/TornadoUserbot",
+  "repository": "https://github.com/lolyz/userbot",
+  "telegram": "https://t.me/sipmks",
+  "success_url": "https://t.me/sipmks",
   "stack": "container",
   "env": {
     "API_KEY": {
