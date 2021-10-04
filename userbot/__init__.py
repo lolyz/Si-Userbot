@@ -5,7 +5,7 @@
 #
 # inline credit @keselekpermen69
 # Recode by @BomanTriwizard
-# t.me/TornadoUserbot
+# t.me/PrivateUserbot
 #
 """ Userbot initialization. """
 
@@ -107,9 +107,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Bomansyah/Tornado-Userbot.git")
+    "https://github.com/Bomansyah/Private-Userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Tornado-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Private-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -346,7 +346,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```『Tornado-Userbot Telah Aktif』```")
+    await bot.send_message(BOTLOG_CHATID, "```『Private-Userbot Telah Aktif』```")
     return
 
 with bot:
@@ -423,18 +423,18 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__ 🚀Tornado-Userbot🚀\n\n"
+                f"**Hey**, __I am using__ 🚀Private-Userbot🚀\n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
-                f"✣ **Group Support :** [Sharing Userbot](t.me/TornadoUserbot)\n"
-                f"✣ **Owner Repo :** [REAL BOMAN](t.me/BomanTriwizard)\n"
-                f"✣ **Repo :** [Tornado-Userbot](https://github.com/Bomansyah/Tornado-Userbot)\n")
+                f"✣ **Group Support :** [Sharing Userbot](t.me/sipmks)\n"
+                f"✣ **Owner Repo :** [REAL SiPmks](t.me/sipmks)\n"
+                f"✣ **Repo :** [Private-Userbot](https://t.me/siPmks)\n")
             await tgbot.send_file(event.chat_id, logo, caption=text,
                                   buttons=[
                                       [
                                           custom.Button.url(
-                                              text="⛑ Group Support ⛑",
-                                              url="https://t.me/TornadoUserbot"
+                                              text="⛑ Support ⛑",
+                                              url="https://t.me/SiPmks"
                                           )
                                       ]
                                   ]
@@ -450,7 +450,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
-                        "**⛑️ Tornado-Userbot Main Menu ⛑️**",
+                        "**⛑️ Private-Userbot Main Menu ⛑️**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -459,33 +459,33 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Tornado-Userbot",
-                    url="https://t.me/TornadoUserbot",
-                    text="**Boman - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Boman](https://t.me/BomanTriwizard)\n✣ **Grup Support :** @TornadoUserbot\n✣ **Repository :** [Tornado-Userbot](https://github.com/Bomansyah/Tornado-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository Private-Userbot",
+                    url="https://t.me/SiPmks",
+                    text="**Private - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Boman](https://t.me/BomanTriwizard)\n✣ **Grup Support :** @PrivateUserbot\n✣ **Repository :** [Private-Userbot](https://github.com/Bomansyah/Private-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/TornadoUserbot"),
+                                "https://t.me/SiPmks"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/Bomansyah/Tornado-Userbot")],
+                                "https://t.me/SiPmks")],
                     ],
                     link_preview=False)
             else:
                 result = builder.article(
-                    title="🌀 Tornado-Userbot 🌀",
-                    description="Tornado-Userbot | Telethon",
-                    url="https://t.me/TornadoUserbot",
-                    text="**Boman - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Boman](https://t.me/BomanTriwizard)\n✣ **Grup Support :** @TornadoUserbot\n✣ **Repository :** [Boman-Userbot](https://github.com/Bomansyah/Tornado-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    title="🌀 Private-Userbot 🌀",
+                    description="Private-Userbot | Telethon",
+                    url="https://t.me/PrivateUserbot",
+                    text="**Boman - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Boman](https://t.me/BomanTriwizard)\n✣ **Grup Support :** @PrivateUserbot\n✣ **Repository :** [Boman-Userbot](https://github.com/Bomansyah/Private-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/TornadoUserbot"),
+                                "https://t.me/SiPmks"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/Bomansyah/Tornado-Userbot")],
+                                "https://t.me/SiPmks")],
                     ],
                     link_preview=False,
                 )
