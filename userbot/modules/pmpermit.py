@@ -29,13 +29,12 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "╔════════════════════╗\n"
-    "     ⛑ 𝗔𝗧𝗧𝗘𝗡𝗧𝗜𝗢𝗡 𝗣𝗟𝗘𝗔𝗦𝗘 ⛑\n"
+    "     ⛑ **MOHON DIBACA** ⛑\n"
     "╚════════════════════╝\n"
-    "• Saya belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai saya menyetujui PM anda.\n"
+    "• Tunggu sampai saya membalas chat anda.\n"
     "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
     "╔════════════════════╗\n"
-    " 𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 𝙏𝙊𝙍𝙉𝘼𝘿𝙊-𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n"
+    " 𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 **@SiPmks**\n"
     "╚════════════════════╝\n"
 )
 # =================================================================
@@ -250,9 +249,9 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit(f"`ｈｅｌｌｏ👋` [{name0}](tg://user?id={uid}) `𝚈𝚘𝚞𝚛  𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝚁𝚎𝚌𝚎𝚒𝚟𝚎𝚍 ✔`")
+        return await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `𝚈𝚘𝚞𝚛  𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝚁𝚎𝚌𝚎𝚒𝚟𝚎𝚍 ✔`")
 
-    await apprvpm.edit(f"`ｈｅｌｌｏ👋` [{name0}](tg://user?id={uid}) `𝚈𝚘𝚞𝚛  𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝚁𝚎𝚌𝚎𝚒𝚟𝚎𝚍 ✔`")
+    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `𝚈𝚘𝚞𝚛  𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝚁𝚎𝚌𝚎𝚒𝚟𝚎𝚍 ✔`")
 
     if BOTLOG:
         await apprvpm.client.send_message(
