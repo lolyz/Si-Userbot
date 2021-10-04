@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ SiUserbot ]
+    branches: [ lolyz ]
   pull_request:
-    branches: [ SiUserbot ]
+    branches: [ lolyz ]
   workflow_dispatch:
 jobs:
   build:
