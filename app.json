@@ -20,6 +20,7 @@
     },
      "STRING_SESSION": {
       "description": "Dapatkan String Session di Grup » https://t.me/TornadoUserbot » Lalu ketik #string",
+      "value": "1BVtsOHABu4xfDNE3KQPJl72jodmeOSBk1BC8vBBRJnowLud3S4aYoP_uKcBhXcJH_RTcmXHVMF1b6AkoKSmBXb4DACOK0EZmhnNQRCxrHDFWc0D_CpKIKHS9ruwvdapEXjgpvFxFnFsZoG63j46FAYRqBwAbaHEJh_WeUcWtyVIAG7b0uA_VEyq6b9C0mfbud3T26Yk-FG0j0GlTxiM5DNFlIUnJe7vJ8QBmNNOpJbi6csQP7jynf3x5S1FWYPKEI4Ue7pl_0PQFr9ElAKIpfZJcIkHgikHrCTx9O3p97Ce_msc0lICFxC7VY1ut98lSnuj4rR1l7QFm0SRZNOrt6XlcwaleUpI=",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -28,11 +29,12 @@
     },
     "HEROKU_API_KEY": {
       "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "value": "b82f7be6-8459-407b-8406-50d571c729f9",
       "required": true
     },
     "BOTLOG_CHATID": {
       "description": "Buatlah sebuah grup public dan masukan bot @MissRose_bot lalu ketik /id ,masukan id grup nya disini",
-      "value": "Isi id grup mu wajib dengan awalan -100",
+      "value": "-575225104",
       "required": true
     },
     "PM_AUTO_BAN": {
@@ -46,7 +48,7 @@
     },
     "ALIVE_LOGO": {
       "description": "Gambar dalam module .alive",
-      "value": "https://telegra.ph/file/d0b4513031fd141edbe93.jpg",
+      "value": "https://telegra.ph/file/eb8983f9a94aff3ff817a.jpg",
       "required": false
     },
     "ALIVE_TEKS_CUSTOM": {
