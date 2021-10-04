@@ -241,9 +241,6 @@ async def amireallyalive(alive):
         f"┣ ✥ `Modules  : `{len(modules)} \n"
         f"┣ ✥ `Uptime   : `{uptime} \n"
         f"┗━━━━━━━━━━━━━━━━ \n"
-        f"⚡️ **Repo Userbot :** [Tornado-Userbot](https://github.com/Bomansyah/Tornado-Userbot) \n"
-        f"⚡️ **Grup Userbot :** [Tekan Disini](https://t.me/TornadoUserbot) \n"
-        f"⚡️ **Owner :** [RealBoman](t.me/BomanTriwizard) \n"
     )
     if ALIVE_LOGO:
         try:
